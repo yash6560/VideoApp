@@ -20,7 +20,7 @@ const App = () => {
     if(isLoading) return <PageLoader/>
 
     const isAuthenticated = Boolean(authUser);
-    const isOnBoarded = authUser?.isOnBoarded;
+    const isOnBoarded = authUser?.isOnboarded;
 
   return (
     <div className='h-screen' data-theme="night">

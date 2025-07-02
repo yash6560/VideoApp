@@ -23,6 +23,7 @@ const OnboardingPage = () => {
   const { mutate:onboardingMutation, isPending } = useMutation({
     mutationFn : async () => {
       const res = await axiosInstance.post('/auth/onboarding', formState);
+      return res.data;
     },
     onSuccess: () => {
       toast.success("data updated successfully");
