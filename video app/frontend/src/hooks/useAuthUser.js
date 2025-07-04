@@ -5,8 +5,13 @@ import { axiosInstance } from '../lib/axios';
 const useAuthUser = () => {
   const authUser= useQuery({queryKey: ["authUser"],
       queryFn: async () => {
-        const response = await axiosInstance.get('/auth/me');
-        return response.data;
+        try {
+          const response = await axiosInstance.get('/auth/me');
+          return response.data;
+        } catch (error) {
+          return null;
+        }
+        
       },
       retry: false,
     })
