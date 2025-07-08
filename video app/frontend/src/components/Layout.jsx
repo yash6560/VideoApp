@@ -9,7 +9,7 @@ const Layout = ({children, showSidebar = false}) => {
             { showSidebar && <Sidebar/>}
             <div className='flex flex-1 flex-col'>
                 <Navbar/>
-                <main className='flex overflow-y-auto'>
+                <main className='flex-1 overflow-y-auto'>
                     { children }
                 </main>
             </div>

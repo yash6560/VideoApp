@@ -9,7 +9,7 @@ const getRecomendedUsers = async (req, res) => {
         const recommendedUsers = await userModel.find({
             $and: [
                 {_id: {$ne : currentUserId}}, // Exclude current user
-                {$id: {$nin : currentUser.friends}}, // Exclude friends of current user
+                {_id: {$nin : currentUser.friends}}, // Exclude friends of current user
                 {isOnboarded: true}, // Only include users who have completed onboarding
             ]
         })

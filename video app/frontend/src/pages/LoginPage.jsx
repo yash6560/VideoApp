@@ -96,7 +96,7 @@ const LoginPage = () => {
               <button className='btn btn-primary w-full' type='submit'>{isPending ? "Logining up..." : "Login into account"}</button>
               <div className='text-center mt-4'>
                 <p className='text-sm'>
-                  Already have an account? <Link to="/login" className='text-primary hover:underline'>Login</Link>
+                  Don't have an account? <Link to="/signup" className='text-primary hover:underline'>Signup</Link>
                 </p>
               </div>
             </div>
