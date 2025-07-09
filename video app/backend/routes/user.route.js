@@ -11,8 +11,8 @@ router.use(protectedRoute); // Apply protectedRoute middleware to all routes in 
 router.get('/', getRecomendedUsers);
 router.get('/friends', getMyFriends);
 
-router.get('/friends-request/:id', sendFriendRequest);
-router.get('/friends-request/:id/accept', acceptFriendRequest);
+router.post('/friends-request/:id', sendFriendRequest);
+router.put('/friends-request/:id/accept', acceptFriendRequest);
 
 router.get('/friends-request', getFriendRequest);
 router.get('/outgoing-friends-request', getOutgoingFriendRequest);
