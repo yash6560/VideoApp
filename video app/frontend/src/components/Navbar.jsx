@@ -34,14 +34,14 @@ const { mutate: logoutMutation } = useMutation({
         <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
             <div className='flex items-center justify-end w-full'>
                 { isChatPage && (
-                    <div className='pl-5'>
+                    <div className=''>
                         <Link to="/" className="flex items-center gap-2.5">
                             <ShipWheelIcon className="size-9 text-primary" />
                             <span className="text-2xl font-bold font-mono bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary tracking-wider">YashVideo's</span>
                         </Link>
                     </div>
                 )}
-                <div className='flex items-center gap-3 sm:gap-4'>
+                <div className='flex items-center gap-3 sm:gap-4 ml-auto'>
                     <Link to='/notifications'>
                         <button className='btn btn-ghost btn-circle'>
                             <BellIcon className='h-6 w-6 text-base-content opacity-70'/>

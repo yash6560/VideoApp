@@ -19,7 +19,7 @@ const HomePage = () => {
     }
   });
 
-  const friends = Array.isArray(friendsData) ? friendsData : [];
+  const friends = Array.isArray(friendsData?.data) ? friendsData.data : [];
 
   // Get recommended users
 const { isLoading: loadingUsers, data: recommendedData } = useQuery({

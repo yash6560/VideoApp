@@ -27,7 +27,7 @@ const getRecomendedUsers = async (req, res) => {
 
 const getMyFriends = async (req, res) => {
     try {
-        const user = await userModel.findById(req.user._id).select('friends').populate('friends', 'name email profilePic nativeLanguage learningLanguage location bio');
+        const user = await userModel.findById(req.user._id).select('friends').populate('friends', 'fullName email profilePic nativeLanguage learningLanguage location bio');
 
         return res.status(200).json({
             message: "Friends fetched successfully",
