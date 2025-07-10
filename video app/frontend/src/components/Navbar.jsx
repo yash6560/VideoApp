@@ -2,7 +2,7 @@ import React from 'react'
 import useAuthUser from '../hooks/useAuthUser'
 import { Link, useLocation } from 'react-router-dom';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import { BellIcon, LogOutIcon } from 'lucide-react';
+import { BellIcon, LogOutIcon, ShipWheelIcon } from 'lucide-react';
 import TheamSector from './TheamSector';
 import { axiosInstance } from '../lib/axios';
 
